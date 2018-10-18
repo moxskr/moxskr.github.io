@@ -1,0 +1,112 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .navs{
+        text-align: start;
+    }
+    .navs ul li{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .form-surname{
+        float: left;
+        width: 100%;
+        margin-top: 20px;;
+    }
+    .form-name{
+        width:100%;
+    }
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .navs{
+        padding-top: 25px;
+        text-align: center;
+    }    
+    .logo{
+        text-align: center;
+    }
+    .main{
+        text-align: center;
+    }
+    .contact-information{
+        border-right: none;
+        border-bottom: 2px solid #555;
+    }
+    .footer .col-md-6, .footer .col-md-3{
+        text-align: center;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .logo{
+        text-align: start;
+        width: 50%;
+        display: inline;
+        padding:30px;
+    }
+    .logo a{
+        font-size: 20px;
+    }
+    .navs{
+        display: none;
+    }
+    .header{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .media-navbar{
+        display: inline-block;
+        float: right;
+        text-align: end;
+        font-size: 23px;
+        padding-right: 10px;
+        color: #555;
+    }
+    .media-navbar a{
+        color:#555;
+        cursor: pointer;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 400px) {
+    
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
