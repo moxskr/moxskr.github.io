@@ -1,0 +1,150 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1100px) {
+    .header{
+        .soc-btns{
+            li{
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+        nav{
+            .nav{
+                .nav-item{
+                    margin-right: 5px;
+                    margin-left: 5px;
+                    font-size: 14px;
+                    }
+            }
+        }
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .main{
+        span{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 42px;
+        }
+        p{
+            font-size: 16px;
+        }
+        .btn{
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 14px;
+        }
+    }
+    .specialites{
+        text-align: center;
+        i{
+            font-size: 56px;
+        }
+        h5{
+            font-size: 18px;
+        }
+        h6{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 40px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .history{
+        .caption{
+            h1{
+                font-size: 40px;
+            }
+            p{
+                font-size: 16px;
+            }
+            .btn{
+                padding: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        .image-history{
+            width: 100%;
+            height: 400px;
+        }
+    }
+    .testimonials{
+        .caption{
+           h1{
+            font-size: 40px;
+           }
+           p{
+            font-size: 16px;
+           } 
+        } 
+        .test-image{
+            width: 100%;
+            height: 400px;
+        }
+    }
+    .food,.team,.booking,.gallery,.menu{
+        h1{
+            font-size: 40px;
+        }
+        h6{
+            font-size: 18px;
+        }
+        .btn{
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 400px) {
+    
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

@@ -1,0 +1,72 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1100px) {
+  .header .soc-btns li {
+    margin-left: 5px;
+    margin-right: 5px; }
+  .header nav .nav .nav-item {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 14px; } }
+
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .main span {
+    font-size: 16px; }
+  .main h1 {
+    font-size: 42px; }
+  .main p {
+    font-size: 16px; }
+  .main .btn {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px; }
+  .specialites {
+    text-align: center; }
+    .specialites i {
+      font-size: 56px; }
+    .specialites h5 {
+      font-size: 18px; }
+    .specialites h6 {
+      font-size: 16px; }
+    .specialites h1 {
+      font-size: 40px; }
+    .specialites p {
+      font-size: 16px; }
+  .history .caption h1 {
+    font-size: 40px; }
+  .history .caption p {
+    font-size: 16px; }
+  .history .caption .btn {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .history .image-history {
+    width: 100%;
+    height: 400px; }
+  .testimonials .caption h1 {
+    font-size: 40px; }
+  .testimonials .caption p {
+    font-size: 16px; }
+  .testimonials .test-image {
+    width: 100%;
+    height: 400px; }
+  .food h1, .team h1, .booking h1, .gallery h1, .menu h1 {
+    font-size: 40px; }
+  .food h6, .team h6, .booking h6, .gallery h6, .menu h6 {
+    font-size: 18px; }
+  .food .btn, .team .btn, .booking .btn, .gallery .btn, .menu .btn {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px; } }
+
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
