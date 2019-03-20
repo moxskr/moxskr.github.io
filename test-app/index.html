@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test app</title>
+    <!-- links -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900" rel="stylesheet"> 
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+ 
+<header class="header" id="home">
+    <div class="top-header">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4 col-md-3 col-6">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="">
+                            <a href="#" class="d-lg-inline-block d-none">Waxom</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-9 d-none d-md-block">
+                        <nav class="d-flex justify-content-end text-right">
+                            <ul class="nav">
+                                <li class="nav-item"><a href="#" class="nav-link" onclick="clickToScroll('home')">Home</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link" onclick="clickToScroll('about_us')">About Us</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link" onclick="clickToScroll('stats')">Stats</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link" onclick="clickToScroll('projects')">Projects</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link" onclick="clickToScroll('features')">Features</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link" onclick="clickToScroll('partners')">Partners</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-6 d-md-none dropdown text-right">
+                        <button class="btn" id="media-dropdown" type="button" data-toggle="dropdown"><i class="fa fa-bars"></i></button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a href="#" class="dropdown-item" onclick="clickToScroll('home')">Home</a>
+                            <a href="#" class="dropdown-item" onclick="clickToScroll('about_us')">About us</a>
+                            <a href="#" class="dropdown-item" onclick="clickToScroll('stats')">Stats</a>
+                            <a href="#" class="dropdown-item" onclick="clickToScroll('projects')">Projects</a>
+                            <a href="#" class="dropdown-item" onclick="clickToScroll('features')">Features</a>
+                            <a href="#" class="dropdown-item" onclick="clickToScroll('partners')">Partners</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-slider carousel slide carousel-fade" id="header-carousel" data-interval="5000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="header-filter d-flex justify-content-center align-items-center">
+                        <div class="col-md-6 slogan text-center">
+                            <h2>Unique and Modern Design 1</h2>
+                            <h1>Portfolio PSD Template</h1>
+                            <p class=" d-none d-md-block">Nam liber tempor cum soluta nobis eleifend option congue nihil imper- <br>diet doming id quod mazim placerat facer possim assum.</p>
+                            <button class="btn">
+                                Get Started
+                            </button>
+                        </div>
+                    </div>    
+                </div>
+                <div class="carousel-item">
+                    <div class="header-filter d-flex justify-content-center align-items-center">
+                        <div class="col-md-6 slogan text-center">
+                            <h2>Unique and Modern Design 2</h2>
+                            <h1>Portfolio PSD Template</h1>
+                            <p class=" d-none d-md-block">Nam liber tempor cum soluta nobis eleifend option congue nihil imper- <br>diet doming id quod mazim placerat facer possim assum.</p>
+                            <button class="btn">
+                                Get Started
+                            </button>
+                        </div>
+                    </div>    
+                </div>
+                <div class="carousel-item">
+                    <div class="header-filter d-flex justify-content-center align-items-center">
+                        <div class="col-md-6 slogan text-center">
+                            <h2>Unique and Modern Design 3</h2>
+                            <h1>Portfolio PSD Template</h1>
+                            <p class=" d-none d-md-block">Nam liber tempor cum soluta nobis eleifend option congue nihil imper- <br>diet doming id quod mazim placerat facer possim assum.</p>
+                            <button class="btn">
+                                Get Started
+                            </button>
+                        </div>
+                    </div>    
+                </div>
+                <div class="carousel-item">
+                    <div class="header-filter d-flex justify-content-center align-items-center">
+                        <div class="col-md-6 slogan text-center">
+                            <h2>Unique and Modern Design</h2>
+                            <h1>Portfolio PSD Template</h1>
+                            <p class=" d-none d-md-block">Nam liber tempor cum soluta nobis eleifend option congue nihil imper- <br>diet doming id quod mazim placerat facer possim assum.</p>
+                            <button class="btn">
+                                Get Started
+                            </button>
+                        </div>
+                    </div>    
+                </div>
+                <div class="carousel-item">
+                    <div class="header-filter d-flex justify-content-center align-items-center">
+                        <div class="col-md-6 slogan text-center">
+                            <h2>Unique and Modern Design</h2>
+                            <h1>Portfolio PSD Template</h1>
+                            <p class=" d-none d-md-block">Nam liber tempor cum soluta nobis eleifend option congue nihil imper- <br>diet doming id quod mazim placerat facer possim assum.</p>
+                            <button class="btn">
+                                Get Started
+                            </button>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <a href="#header-carousel" class="carousel-control-prev d-none d-md-flex" role="button" data-slide="prev">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </a>
+            <a href="#header-carousel" class="carousel-control-next  d-none d-md-flex" role="button" data-slide="next">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+            <ol class="carousel-indicators  d-none d-md-flex">
+                <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#header-carousel" data-slide-to="1"></li>
+                <li data-target="#header-carousel" data-slide-to="2"></li>
+                <li data-target="#header-carousel" data-slide-to="3"></li>
+                <li data-target="#header-carousel" data-slide-to="4"></li>
+            </ol>
+        </div>
+</header>
+
+<section class="services">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-3 col-sm-6 service">
+                <img src="img/services1.png" alt="">
+                <h3>Web & App Design</h3>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <hr>
+            </div>
+            <div class="col-lg-3 col-sm-6 service">
+                <img src="img/services2.png" alt="">
+                <h3>Development</h3>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <hr>
+            </div>
+            <div class="col-lg-3 col-sm-6 service">
+                <img src="img/services3.png" alt="">
+                <h3>Customization</h3>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <hr>
+            </div>
+            <div class="col-lg-3 col-sm-6 service">
+                <img src="img/services4.png" alt="">
+                <h3>Marketing</h3>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <hr>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about_us">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h1>Waxom is Realization of your Ideas.</h1>
+                <p>
+                    Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <img src="img/about_bg.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="purchase">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2><span>Waxom</span> Multipurpose WordPress Theme</h2>
+                <p>Don't Forget to Rate the Template. Thanks so much!</p>
+            </div>
+            <div class="col-md-4 d-md-flex align-items-center justify-content-end">
+                <button class="btn">
+                    Purchase now
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2>Our Latest Projects</h2>
+                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="categories d-flex justify-content-center">
+                    <ul>
+                        <li class="cat-item"><button class="btn active">All</button></li>
+                        <li class="cat-item"><button class="btn">Web Design</button></li>
+                        <li class="cat-item"><button class="btn">Mobile App</button></li>
+                        <li class="cat-item"><button class="btn">Illustrator</button></li>
+                        <li class="cat-item"><button class="btn">Photography</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="container grid">
+        <div class="row projects-grid">
+            <div class="col-md-4 col-sm-6 projects-item">
+                <img src="img/pritem1.jpg" alt="">
+                <div class="projects-hover">
+                    <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+                <div class="projects-caption">
+                    <h3>Claritas Etiam Processus</h3>
+                    <p>
+                        Photography, Nature
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 projects-item">
+                <img src="img/pritem2.jpg" alt="">
+                <div class="projects-hover">
+                    <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+                <div class="projects-caption">
+                    <h3>Quam Nutamus Farum</h3>
+                    <p>
+                        Graphic Design, Mock-Up
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 projects-item">
+                <img src="img/pritem3.jpg" alt="">
+                <div class="projects-hover">
+                    <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+                <div class="projects-caption">
+                    <h3>Usus Legentis Videntur</h3>
+                    <p>
+                        Photography, Holiday
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 projects-item">
+                <img src="img/pritem4.jpg" alt="">
+                <div class="projects-hover">
+                    <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+                <div class="projects-caption">
+                    <h3>Claritas Etiam Processus</h3>
+                    <p>
+                        Photography, Nature
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 projects-item">
+                <img src="img/pritem5.jpg" alt="">
+                <div class="projects-hover">
+                    <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+                <div class="projects-caption">
+                    <h3>Claritas Etiam Processus</h3>
+                    <p>
+                        Photography, Nature
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 projects-item">
+                <img src="img/pritem6.jpg" alt="">
+                <div class="projects-hover">
+                    <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+                <div class="projects-caption">
+                    <h3>Claritas Etiam Processus</h3>
+                    <p>
+                        Photography, Nature
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <button class="btn">
+                    Load more
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="numbers" id="stats">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
+                <div>
+                    <img src="img/number1.png" alt="">
+                    <h1 data-number="3587"></h1>
+                    <p>satisfied clients</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
+                <div>
+                    <img src="img/number2.png" alt="">
+                    <h1 data-number="207"></h1>
+                    <p>cups of coffee</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
+                <div>
+                    <img src="img/number3.png" alt="">
+                    <h1 data-number="2500"></h1>
+                    <p>blog posts</p>
+                    <hr>
+                </div> 
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
+                <div>
+                    <img src="img/number4.png" alt="">
+                    <h1 data-number="873"></h1>
+                    <p>Likes</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
+                <div> 
+                    <img src="img/number5.png" alt="">
+                    <h1 data-number="900"></h1>
+                    <p>we launched</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+</section>
+
+<section class="mobile" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 d-none d-lg-block">
+                <img src="img/phone.png" alt="">
+            </div>
+            <div class="col-lg-7 col-md-12 mobile-text">
+                <h1>Excellent for Mobile Devices</h1>
+                <p>Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                <ul>
+                    <li><div class="circle"><i class="fa fa-angle-right"></i></div>Nam liber tempor cum soluta nobis eleifend option;</li>
+                    <li><div class="circle"><i class="fa fa-angle-right"></i></div>Option congue nihil imperdiet doming id quod mazim placerat facer;</li>                    
+                    <li><div class="circle"><i class="fa fa-angle-right"></i></div>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+                    <li><div class="circle"><i class="fa fa-angle-right"></i></div>Investigationes demonstraverunt lectores</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="brands" id="partners">
+    <div class="filter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 d-flex col-md-6 juf-end"><img src="img/brand1.png" alt=""></div>
+                <div class="col-lg-3 d-flex col-md-6 juf-cent"><img src="img/brand2.png" alt=""></div>
+                <div class="col-lg-3 d-flex col-md-6 juf-cent"><img src="img/brand3.png" alt=""></div>
+                <div class="col-lg-3 d-flex col-md-6 juf-start"><img src="img/brand4.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-5 text-sm-center text-md-left col-sm-12">
+                Copyright <i class="fa fa-copyright"></i> 2015 <a href="#"> Waxom </a> | <a href="#"> Privacy Policy</a>
+            </div>
+            <div class="col-lg-2 col-md-3 d-md-block d-none">
+                <a href="#">FAQ</a> | <a href="#">Support</a>
+            </div>
+            <div class="col-lg-3 col-md-none"></div>
+            <div class="col-lg-4 d-md-block d-none text-right">
+                Designed by <a href="#">ThemeFire</a> | Only on <a href="#">Envato Market</a> 
+            </div>
+        </div>
+    </div>
+</footer>
+
+ <!-- scripts -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+ <script src="js/jquery.js"></script>
+ <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+ <script src="js/bootstrap.js"></script>
+ <script src="js/common.js"></script>
+</body>
+</html>
