@@ -195,26 +195,24 @@ a.active-nav {
   width: 100%;
   background: #222222;
   border-radius: 15px;
-  margin-top: 15px; }
+  margin-top: 15px;
+  padding: 20px; }
 
 .refferal-form h1 {
   margin: 0;
   display: inline-block;
   font-size: 36px;
   line-height: 42px;
-  color: #fff;
-  padding: 26px 25px 0 21px; }
+  color: #fff; }
 
 .refferal-form a {
   text-decoration: none;
   color: #999999;
   font-size: 24px;
-  line-height: 28px;
-  padding: 12px 28px 0 21px;
   display: inline-block; }
 
 .btn-container {
-  padding: 29px 21px 24px 16px; }
+  padding-top: 30px; }
 
 .bal-cont {
   padding-top: 0px; }
@@ -475,5 +473,4 @@ button.btn.close-btn {
   height: 66px;
   display: flex;
   justify-content: center;
-  padding: 0;
   align-items: center; }
