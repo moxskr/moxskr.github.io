@@ -18,7 +18,7 @@ body {
 /****************Navigation************\ */
 .nav {
   width: 100%;
-  padding-top: 130px; }
+  padding-top: 100px; }
 
 .nav a {
   font-family: Roboto;
@@ -48,7 +48,7 @@ a.active-nav {
   border-radius: 15px; }
 
 .balance p {
-  padding: 27px 76px 7px 21px;
+  padding: 27px 45px 7px 21px;
   margin: 0 auto;
   font-size: 24px;
   font-family: Roboto;
@@ -195,27 +195,29 @@ a.active-nav {
   width: 100%;
   background: #222222;
   border-radius: 15px;
-  margin-top: 15px;
-  padding: 20px; }
+  margin-top: 15px; }
 
 .refferal-form h1 {
   margin: 0;
-  display: inline-block;
+  display: block;
   font-size: 36px;
   line-height: 42px;
-  color: #fff; }
+  color: #fff;
+  padding: 26px 0 0 10px; }
 
 .refferal-form a {
   text-decoration: none;
   color: #999999;
   font-size: 24px;
-  display: inline-block; }
+  line-height: 28px;
+  display: inline-block;
+  padding: 12px 0 0 10px; }
 
 .btn-container {
-  padding-top: 30px; }
+  padding: 29px 21px 24px 16px; }
 
 .bal-cont {
-  padding-top: 0px; }
+  padding: 0 21px 0 24px; }
 
 .btn-copy {
   border: 2px solid #EB5757;
@@ -260,7 +262,8 @@ a.active-nav {
     margin-left: 5px; }
 
 .profile-form p {
-  display: inline-block; }
+  display: inline-block;
+  padding-right: 10px; }
 
 .phone {
   color: #999999;
@@ -471,5 +474,7 @@ button.btn.close-btn {
   border-radius: 50%;
   border: 2px solid white;
   height: 66px;
-  text-align: center;
-  line-height: 33px; }
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  align-items: center; }
