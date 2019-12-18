@@ -24,3 +24,13 @@ function open_login_tab() {
     document.getElementById('modal-up').style.borderBottomColor = '#999';
 }
 
+function makeAllWithoutBorder() {
+    document.getElementById('light').style.borderColor = "#111";
+    document.getElementById('base').style.borderColor = "#111";
+    document.getElementById('pro').style.borderColor = "#111";
+}
+
+function choose(id) {
+    makeAllWithoutBorder();
+    document.getElementById(id).style.borderColor = "#EB5757"
+}
