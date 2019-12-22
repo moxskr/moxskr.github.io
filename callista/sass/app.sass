@@ -16,7 +16,11 @@ body
 /*****************Classes*************/
 .main-background
   background: linear-gradient(0.44deg, #000000 12.62%, rgba(0, 0, 0, 0) 68.07%), linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/background-profile.jpeg)
+  background-repeat: no-repeat
+  background-size: cover
   width: 100%
+  height: 120vh
+
 /****************Navigation************\
 .nav
   width: 100%
@@ -183,14 +187,16 @@ a.active-nav
     padding: 10px
     &::placeholder
       color: $border-color
+  input:hover
+    border: 1px solid #fff
+  input:focus
+    border: 1px solid #fff
   label
     font-size: 18px
     line-height: 21px
     color: $text-color
     padding: 24px 0 11px 25px
     margin: 0
-
-
 /************Refferal**********\
 .refferal-form
   width: 100%
@@ -290,7 +296,8 @@ a.active-nav
 
 footer
   width: 100%
-  height: 141px
+  bottom: 0
+  height: 140px
   background: #111111
   a
     font-size: 24px
@@ -302,6 +309,7 @@ footer
       transition-duration: 0.4s
 
 /* Main section index.html*/
+
 .main
   background-image: url("../img/main_bg.png")
   height: 100vh
@@ -312,16 +320,14 @@ footer
     position: absolute
     align-self: center
 
+.main--cont
+  padding-top: 350px
+
 .main--img-container
   position: relative
 
 .main--btn-container
-  position: relative
-  display: flex
-  justify-content: center
-  .btn
-    position: absolute
-    margin-top: 250px
+  padding-top: 250px
 
 .main-btn
   background-color: transparent
@@ -342,12 +348,8 @@ footer
     transition-duration: 0.4s
 
 .main--bottom-text
-  position: relative
-  display: flex
-  justify-content: center
+  padding-top: 100px
   span
-    position: absolute
-    margin-top: 400px
     color: #999
     font-size: 18px
 
@@ -411,7 +413,10 @@ footer
     line-height: 21px
     margin-left: 10px
     margin-top: 10px
-
+  input:hover
+    border: 1px solid #fff
+  input:focus
+    border: 1px solid #fff
 .modal--checkbox input
   appearance: none
   -moz-appearance: none
@@ -471,14 +476,14 @@ button.btn.close-btn
   text-align: center
   color: white
   position: absolute
-  top: 150px
+  top: 100px
   right: 150px
   font-size: 60px
   width: 66px
   border-radius: 50%
   border: 2px solid white
   height: 66px
-  line-height: 33px
+  line-height: 34px
 
 /* myrobot1.html */
 
@@ -513,10 +518,6 @@ button.btn.close-btn
 .special--item
   border-radius: 15px
   background-color: #222
-  margin-left: 7px
-  margin-right: 7px
-  padding-left: 0px
-  padding-right: 0px
   border: 2px solid #111
   &:hover
     cursor: pointer
@@ -576,8 +577,10 @@ button.btn.close-btn
   background-color: #222
   border-radius: 106px
   font-size: 24px
+  border: 2px solid #222
   &:hover
     color: white
+    border-color: #EB5757
 
 .history--filters
   padding-top: 30px
@@ -604,7 +607,9 @@ button.btn.close-btn
 .history--list,.team--list
   margin-bottom: 15px
   height: 600px
-  overflow-y: auto
+  overflow-y: scroll
+  overflow-x: hidden
+  z-index : 99
 
 ::-webkit-scrollbar
   width: 16px
@@ -658,3 +663,195 @@ button.btn.close-btn
 .team--item
   padding-left: 20px
   padding-right: 20px
+
+.prof--cont
+  padding-top: 75px
+
+.nav-bar--btn
+  position: fixed
+  top: 30px
+  left: 20px
+  z-index: 500
+  .btn
+    font-size: 32px
+    color: white
+
+.member--typ-phone
+  font-size: 36px
+  color: white
+  padding-top: 90px
+  h2
+    font-weight: bold
+
+.special--typ-phone h1
+  font-size: 18px
+  color: white
+
+.h--container
+  padding-top: 70px
+
+@media screen and (max-height: 900px)
+  .history--list, .team--list
+    height: 500px
+
+@media screen and (max-width: 1366px)
+  .support
+    right: 80px
+
+  .h--container
+    padding-top: 40px
+
+  .nav
+    padding-top: 50px
+
+  .special
+    background-color: transparent
+    padding-top: 0px
+    padding-bottom: 0px
+    .col-12
+      padding-left: 0px
+      padding-right: 0px
+    .col-4
+      padding-left: 10px
+      padding-right: 10px
+
+  .history--list
+    height: 500px
+
+
+@media screen and (max-width: 980px)
+  .main-background
+    height: 100vh
+
+  .row
+    margin-right: 0px
+    margin-left: 0px
+
+  .h--container
+    padding-top: 0px
+    h1
+      font-size: 18px
+
+  .membership--item
+    font-size: 10px
+    height: 36px
+
+  .special
+    background-color: transparent
+    padding-top: 0px
+    padding-bottom: 0px
+    .col-12
+      padding-left: 0px
+      padding-right: 0px
+    .col-4
+      padding-left: 10px
+      padding-right: 10px
+
+  .special--item
+    margin-right: 0px
+    margin-left: 0px
+    h2
+      font-size: 18px
+    p
+      font-size: 12px
+
+  .special--item-header
+    padding-top: 10px
+    padding-bottom: 5px
+
+  .special--item-caption
+    padding-top: 10px
+    padding-bottom: 10px
+
+  .special--btn
+    button
+      padding-left: 35px
+      padding-right: 35px
+      padding-top: 8px
+      padding-bottom: 8px
+      font-size: 13px
+
+  .support
+    bottom: 30px
+    right: 20px
+
+  .btn--filters
+    font-size: 13px
+
+  .history--select
+    font-size: 13px
+    option
+      font-size: 13px
+
+  .history--filters
+    .col-3, .col-5, .col-7
+      padding-left: 5px
+      padding-right: 5px
+      padding-top: 5px
+
+  .history--list,.team--list
+    height: 300px
+    .col-lg-12
+      padding-right: 5px
+      padding-left: 5px
+
+  .history--item
+    height: 36px
+    font-size: 10px
+    .col-4, .col-2, .col-3,.col-5
+      padding-left: 0px
+      padding-right: 0px
+
+  .team--head
+    font-size: 10px
+    padding-top: 0px
+    padding-left: 0px
+    padding-right: 0px
+
+  .team--item
+    font-size: 10px
+    height: 36px
+    padding-right: 0px
+    padding-left: 0px
+
+
+
+/* media-menu */
+
+.media-menu
+  z-index: 1000
+  background: rgb(51, 51, 51)
+  position: absolute
+  top: 0
+  width: 100%
+  height: 100vh
+  display: none
+
+.media-menu--header
+  padding-top: 45px
+  img
+    height: 83px
+    width: 83px
+
+.media-menu--nav
+  padding-top: 110px
+  padding-bottom: 100px
+  ul
+    margin: 0px
+    margin-left: -40px
+    list-style: none
+    li
+      margin-top: 24px
+      margin-bottom: 24px
+      a
+        color: white
+        font-size: 24px
+
+.media-menu--footer
+  font-size: 18px
+  padding-top: 20px
+  a
+    color: #999
+  .media-menu--exit
+    color: #EB5757
+

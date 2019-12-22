@@ -34,3 +34,7 @@ function choose(id) {
     makeAllWithoutBorder();
     document.getElementById(id).style.borderColor = "#EB5757"
 }
+
+function handleMediaMenu() {
+    document.getElementsByClassName('media-menu')[0].style.display = "block";
+}
