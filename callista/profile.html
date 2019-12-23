@@ -16,7 +16,7 @@
   <section class="main-background">
     <div class="container">
       <div class="row">
-        <div class="nav">
+        <div class="nav d-none d-lg-flex">
           <a class="col-md-3 active-nav" href="profile.html">Профиль</a>
           <a class="col-md-3" href="my_robot1.html">Мой робот</a>
           <a class="col-md-3" href="history.html">История</a>
@@ -24,11 +24,86 @@
         </div>
       </div>
     </div>
-    <div class="container prof--cont">
+    <div class="nav-bar--btn d-lg-none">
+      <button class="btn" onclick="handleMediaMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div class="d-lg-none d-md-none">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-sm-12 col-12">
+          <div class="h1-profile">
+            <h1>Профиль</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-12">
+          <div class="profile-info">
+            <div class="avatar">
+              <div class="camera-position">
+                <i class="fas fa-camera btn-camera"></i>
+              </div>
+            </div>
+            <div class="profile-contact">
+              <h1 id="name-contact">Иванова Ирина Ивановна</h1>
+              <i class="far fa-edit pencil"></i><br class="br" />
+              <p id="Email-profile">E-mail</p>
+              <p id="Email-contact">calisto@mail.ru</p>
+              <i class="far fa-edit pencil"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-sm-6 col-6">
+        <div class="balance">
+          <p>Текущий баланс</p>
+          <p id="money">9460$</p>
+          <div class="bal-cont btn-container w-100">
+            <button type="button" class="btn btn-outline-success btn-cashin">Пополнить</button>
+            <button type="button" class="btn btn-outline-success btn-cashin">Снять</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-6">
+        <div class="refferal-form">
+          <h1>Реферальная ссылка</h1><br class="d-sm-none" />
+          <a href="#">http://calisto.com/e...</a><br class="d-sm-non" />
+          <div class="btn-container w-100">
+            <button type="button" class="btn btn-outline-danger btn-copy">Скопировать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-12">
+        <div class="profile-password">
+          <div class="password-form">
+            <h1>Пароль</h1></br>
+            <label>Старый пароль</label>
+            <input placeholder="Введите старый пароль" type="password">
+            <label>Новый пароль</label>
+            <input placeholder="Введите новый пароль" type="password">
+            <input placeholder="Повторите новый пароль" type="password">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-12 code-form">
+        <div class="">
+          <p>Уникальный код</p><br />
+          <p id="unique-code">QUINSPO21</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container prof--cont d-none d-lg-block d-md-block">
+      <div class="row">
+        <div class="col-lg-3 col-md-3">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-lg-12 col-md-12">
               <div class="balance">
                 <p>Текущий баланс</p>
                 <p id="money">9460$</p>
@@ -40,10 +115,10 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-lg-12 col-md-12">
               <div class="refferal-form">
-                <h1>Реферальная ссылка</h1><br />
-                <a href="#">http://calisto.com/e...</a><br />
+                <h1>Реферальная ссылка</h1><br class="d-sm-none" />
+                <a href="#">http://calisto.com/e...</a><br class="d-sm-non" />
                 <div class="btn-container w-100">
                   <button type="button" class="btn btn-outline-danger btn-copy">Скопировать</button>
                 </div>
@@ -51,7 +126,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12 code-form">
+            <div class="col-lg-12 col-md-12 code-form">
               <div class="">
                 <p>Уникальный код</p><br />
                 <p id="unique-code">QUINSPO21</p>
@@ -59,9 +134,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-lg-9 col-md-9">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-lg-12 col-md-12">
               <div class="profile-info">
                 <div class="avatar">
                   <div class="camera-position">
@@ -79,7 +154,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-lg-12 col-md-12">
               <div class="profile-password">
                 <div class="password-form">
                   <h1>Пароль</h1></br>
@@ -93,7 +168,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-lg-12 col-md-12">
               <div class="profile-number">
                 <div class="profile-form">
                   <p class="phone">Телефон:</p>
@@ -103,7 +178,7 @@
             </div>
           </div>
           <div class="row">
-            <div class=col-md-3>
+            <div class="col-lg-3 col-md-3">
               <div class="w-100 btn-form">
                 <button type="button" class="btn btn-outline-dark btn-save">Сохранить</button>
               </div>
@@ -114,7 +189,32 @@
     </div>
   </section>
 
-  <footer class="footer d-flex align-items-center">
+  <div class="modal-support">
+    <div class="support">
+      <img src="img/icon1.png" alt="">
+    </div>
+  </div>
+
+  <div class="media-menu">
+    <div class="media-menu--header d-flex justify-content-center">
+      <img src="img/logo_footer.png" alt="">
+    </div>
+    <div class="media-menu--nav d-flex text-center justify-content-center">
+      <ul>
+        <li><a href="profile.html">Профиль</a></li>
+        <li><a href="my_robot1.html">Мой робот</a></li>
+        <li><a href="history.html">История</a></li>
+        <li><a href="team.html">Команда</a></li>
+      </ul>
+    </div>
+    <div class="media-menu--footer text-center">
+      <a href="#" class="media-menu--exit">Выход</a>
+      <br>
+      <a href="#">Лицензионное соглашение</a>
+    </div>
+  </div>
+
+  <footer class="footer d-none d-lg-flex align-items-center">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-lg-4">

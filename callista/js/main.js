@@ -38,3 +38,13 @@ function choose(id) {
 function handleMediaMenu() {
     document.getElementsByClassName('media-menu')[0].style.display = "block";
 }
+
+document.getElementById('hover-img-main').addEventListener('mouseover', function () {
+    document.getElementById("onhover-img-main-top").style.opacity = '1';
+    document.getElementById("onhover-img-main-bot").style.opacity = '1';
+});
+
+document.getElementById('hover-img-main').addEventListener('mouseleave', function () {
+    document.getElementById("onhover-img-main-top").style.opacity = '0';
+    document.getElementById("onhover-img-main-bot").style.opacity = '0';
+});
