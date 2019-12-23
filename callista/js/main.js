@@ -2,6 +2,45 @@ const modal_window = document.getElementById('modal_window');
 const register_tab = document.getElementById('modal-register');
 const login_tab = document.getElementById('modal-login');
 
+const logo_img = document.getElementById('hover-img-main');
+const hover_top = document.getElementById('onhover-img-main-top');
+const hover_bot = document.getElementById('onhover-img-main-bot');
+const phone_top = document.getElementById('phone-img-main-top');
+const phone_bot = document.getElementById('phone-img-main-bot');
+
+if(navigator.userAgent.indexOf('Firefox') !== -1) {
+    hover_top.style.marginLeft = '550px';
+    hover_bot.style.marginRight = '600px';
+    hover_bot.style.marginLeft = 'unset';
+    phone_bot.style.marginLeft = '100px';
+    phone_top.style.marginRight = '100px';
+    phone_top.style.marginLeft = 'unset';
+    if (window.matchMedia('(max-width: 1366px)').matches) {
+        hover_top.style.marginLeft = '400px';
+        hover_bot.style.marginRight = '420px';
+        hover_bot.style.marginLeft = 'unset';
+    } else {
+        hover_top.style.marginLeft = '550px';
+        hover_bot.style.marginRight = '600px';
+        hover_bot.style.marginLeft = 'unset';
+    }
+}
+
+window.onresize = function () {
+    if(navigator.userAgent.indexOf('Firefox') !== -1) {
+        if (window.matchMedia('(max-width: 1366px)').matches) {
+            hover_top.style.marginLeft = '400px';
+            hover_bot.style.marginRight = '420px';
+            hover_bot.style.marginLeft = 'unset';
+        }
+        else{
+            hover_top.style.marginLeft = '550px';
+            hover_bot.style.marginRight = '600px';
+            hover_bot.style.marginLeft = 'unset';
+        }
+    }
+};
+
 function open_modal() {
     modal_window.style.display = 'flex';
 }

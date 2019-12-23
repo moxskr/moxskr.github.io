@@ -324,26 +324,26 @@ footer
   padding-top: 300px
 
 .main--img-container
-  position: relative
-  width: 100%
-  .logo-img
-    width: 300px
-    height: 300px
-    cursor: pointer
-  .top-img
-    width: 400px
-    height: 85px
-    position: absolute
-    margin-left: 550px
-    top: 0
-    transition-duration: 0.4s
-  .bot-img
-    position: absolute
-    width: 400px
-    height: 50px
-    bottom: 0
-    transition-duration: 0.4s
-    margin-right: 600px
+    position: relative
+    width: 100%
+    .logo-img
+      width: 300px
+      height: 300px
+      cursor: pointer
+    .top-img
+      width: 400px
+      height: 85px
+      position: absolute
+      margin-left: 275px
+      top: 0
+      transition-duration: 0.4s
+    .bot-img
+      position: absolute
+      width: 400px
+      height: 50px
+      bottom: 0
+      transition-duration: 0.4s
+      margin-left: -300px
 
 .top-img, .bot-img
   opacity: 0
@@ -466,6 +466,12 @@ footer
 
 a.modal-active
   border-bottom: 2px solid #EB5757
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
 
 .modal--sign-in
   .btn.main-btn
@@ -740,11 +746,11 @@ button.btn.close-btn
     .bot-img
       width: 300px
       height: 36px
-      margin-right: 420px
+      margin-left: -250px
     .top-img
       width: 300px
       height: 63px
-      margin-left: 400px
+      margin-left: 220px
 
   .support
     right: 80px
@@ -773,13 +779,13 @@ button.btn.close-btn
   display: none
   position: absolute
 
-.bot-phone-img
+#phone-img-main-bot
   bottom: -50px
-  margin-left: 100px
+  margin-left: 50px
 
-.top-phone-img
+#phone-img-main-top
   top: -50px
-  margin-right: 100px
+  margin-left: -50px
 
 @media screen and (max-width: 750px)
   #modal-in, #modal-up
@@ -903,7 +909,7 @@ button.btn.close-btn
       padding-bottom: 8px
       font-size: 13px
 
-  .support,
+  .support
     bottom: 30px
     right: 20px
 
