@@ -61,8 +61,8 @@
           <p>Текущий баланс</p>
           <p id="money">9460$</p>
           <div class="bal-cont btn-container w-100">
-            <button type="button" class="btn btn-outline-success btn-cashin">Пополнить</button>
-            <button type="button" class="btn btn-outline-success btn-cashin">Снять</button>
+            <button type="button" class="btn btn-outline-success btn-cashin" onclick="open_modal_repl()">Пополнить</button>
+            <button type="button" class="btn btn-outline-success btn-cashin" onclick="open_modal_with()">Снять</button>
           </div>
         </div>
       </div>
@@ -108,8 +108,8 @@
                 <p>Текущий баланс</p>
                 <p id="money">9460$</p>
                 <div class="bal-cont btn-container w-100">
-                  <button type="button" class="btn btn-outline-success btn-cashin">Пополнить</button>
-                  <button type="button" class="btn btn-outline-success btn-cashin">Снять</button>
+                  <button type="button" class="btn btn-outline-success btn-cashin" onclick="open_modal_repl()">Пополнить</button>
+                  <button type="button" class="btn btn-outline-success btn-cashin" onclick="open_modal_with()">Снять</button>
                 </div>
               </div>
             </div>
@@ -243,6 +243,256 @@
   <div class="modal-support">
     <div class="support">
       <img src="img/icon1.png" alt="">
+    </div>
+  </div>
+
+  <div class="modal--replenish align-items-center" id="modal-repl">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="repl--form">
+            <div class="repl--form-header">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 repl--type" onclick="choose_type('repl-bank')" id="repl-bank-border">
+                  <img src="img/bank.png" alt=""><br>
+                  Банковская карта
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 repl--type" onclick="choose_type('repl-qiwi')" id="repl-qiwi-border">
+                  <img src="img/qiwi.png" alt=""><br>
+                  Qiwi <br> кошелек
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 repl--type" onclick="choose_type('repl-bitcoin')" id="repl-bitcoin-border">
+                  <img src="img/bitcoin.png" alt=""><br>
+                  Bitcoin
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 repl--type" onclick="choose_type('repl-eth')" id="repl-eth-border">
+                  <img src="img/eth.png" alt=""><br>
+                  Etherium
+                </div>
+              </div>
+            </div>
+            <div class="repl--form-inputs">
+              <div class="bank" id="repl-bank">
+                <div class="row repl-bank-top">
+                  <div class="col-6">
+                    <label>Сумма списания</label>
+                    <input type="text" placeholder="Сумма">
+                  </div>
+                </div>
+                <div class="row repl-bank-cent">
+                  <div class="col-6">
+                    <label>Номер карты</label>
+                    <input type="text" placeholder="0000 0000 0000 0000">
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                    <label>Имя и фамилия</label>
+                    <input type="text" placeholder="Имя и фамилия">
+                  </div>
+                </div>
+                <div class="row repl-bank-bot">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-6">
+                    <label>Месяц и год</label>
+                    <input type="text" placeholder="02/20">
+                  </div>
+                  <div class="col-md-4 col-lg-4 col-sm-4">
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-4">
+                    <label>CVV</label>
+                    <input type="text" placeholder="123">
+                  </div>
+                </div>
+                <div class="col-4">
+                  <label>SMS код</label>
+                  <input type="text" placeholder="SMS код">
+                </div>
+                <div class="row repl-bank-buttons">
+                  <button class="btn repl-btn-v2">Отправить SMS</button>
+                  <button class="btn repl-btn-v1">Оплатить</button>
+                </div>
+              </div>
+              <div class="qiwi" id="repl-qiwi">
+                <div class="row repl-bank-top">
+                  <div class="col-6">
+                    <label>Сумма списания</label>
+                    <input type="text" placeholder="Сумма">
+                  </div>
+                </div>
+                <div class="row repl-bank-cent">
+                  <div class="col-6">
+                    <label>Номер телефона</label>
+                    <input type="text" placeholder="+7 987 654 32 21">
+                  </div>
+                </div>
+                <div class="col-4">
+                  <label>SMS код</label>
+                  <input type="text" placeholder="SMS код">
+                </div>
+                <div class="row repl-bank-buttons">
+                  <button class="btn repl-btn-v2" style="padding: 5px 10px 5px 10px">Отправить SMS</button>
+                  <button class="btn repl-btn-v1" style="padding: 5px 10px 5px 10px">Оплатить</button>
+                </div>
+              </div>
+              <div class="bitcoin" id="repl-bitcoin">
+                <div class="row">
+                  <div class="col-12">
+                    <label>Переведите средства на наш BTC счет и свяжитесь со службой поддержки</label>
+                    <p>0x0Fe01A648C719bCC699759638bb619e29bf005d2</p>
+                  </div>
+                </div>
+                <div class="row  repl-bank-buttons">
+                  <button class="btn repl-btn-v2">Копировать</button>
+                  <button class="btn repl-btn-v1">Служба поддержка</button>
+                </div>
+              </div>
+              <div class="eth" id="repl-eth">
+                <div class="row">
+                  <div class="col-12">
+                    <label>Переведите средства на наш ETC счет и свяжитесь со службой поддержки</label>
+                    <p>0x0Fe01A648C719bCC699759638bb619e29bf005d2</p>
+                  </div>
+                </div>
+                <div class="row  repl-bank-buttons">
+                  <button class="btn repl-btn-v2">Копировать</button>
+                  <button class="btn repl-btn-v1">Служба поддержка</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    <button class="btn modal--replenish-close" onclick="close_modal_repl()">
+      &times;
+    </button>
+  </div>
+
+  <div class="modal--withdraw align-items-center" id="modal-with">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 with-form">
+          <div class="">
+            <div class="row with-type" id="with-bank" onclick="chose_type_with('with-bank')">
+                <div class="col-lg-4 col-4 col-md-4 col-sm-4 d-flex align-items-center">
+                  <img src="img/bank.png" alt="">
+                  Банковская <br>
+                  карта
+                </div>
+                <div class="col-lg-3 col-3 col-md-3 col-sm-3">
+                  <label>Сумма вывода</label>
+                  <input type="text" placeholder="Введите сумму">
+                </div>
+                <div class="col-lg-5 col-5 col-md-5 col-sm-5">
+                  <label>Номер карты</label>
+                  <input type="text" placeholder="0000 0000 0000 0000">
+                </div>
+            </div>
+            <div class="row with-type" id="with-qiwi"  onclick="chose_type_with('with-qiwi')">
+              <div class="col-lg-4 col-4 col-md-4 col-sm-4 d-flex align-items-center">
+                <img src="img/qiwi.png" alt="">
+                Qiwi <br>
+                кошелек
+              </div>
+              <div class="col-lg-3 col-3 col-md-3 col-sm-3">
+                <label>Сумма вывода</label>
+                <input type="text" placeholder="Введите сумму">
+              </div>
+              <div class="col-lg-5 col-5 col-md-5 col-sm-5">
+                <label>Номер телефона</label>
+                <input type="text" placeholder="+7 891 918 12 12">
+              </div>
+            </div>
+            <div class="row with-type" id="with-bitcoin"  onclick="chose_type_with('with-bitcoin')">
+              <div class="col-lg-4 col-4 col-md-4 col-sm-4 d-flex align-items-center">
+                <img src="img/bitcoin.png" alt="">
+                Bitcoin
+              </div>
+              <div class="col-lg-3 col-3 col-md-3 col-sm-3">
+                <label>Сумма вывода</label>
+                <input type="text" placeholder="Введите сумму">
+              </div>
+              <div class="col-lg-5 col-5 col-md-5 col-sm-5">
+                <label>Btc кошелек</label>
+                <input type="text" placeholder="0x0Fe01A...bb619e29bf005d2">
+              </div>
+            </div>
+            <div class="row with-type" id="with-eth"  onclick="chose_type_with('with-eth')">
+              <div class="col-lg-4 col-4 col-md-4 col-sm-4 d-flex align-items-center">
+                <img src="img/eth.png" alt="">
+                Etherium
+              </div>
+              <div class="col-lg-3 col-3 col-md-3 col-sm-3">
+                <label>Сумма вывода</label>
+                <input type="text" placeholder="Введите сумму">
+              </div>
+              <div class="col-lg-5 col-5 col-md-5 col-sm-5">
+                <label>Etc кошелек</label>
+                <input type="text" placeholder="0x0Fe01A...bb619e29bf005d2">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 buttons-withdraw text-center">
+                <button class="btn repl-btn-v1">
+                  Вывести
+                </button>
+                <button class="btn repl-btn-v2">
+                  Служба поддержки
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn modal--withdraw-close" onclick="close_modal_with()">
+      &times;
+    </button>
+  </div>
+
+  <div class="modal-false d-none align-items-center">
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-lg-6 message">
+            <div class="row">
+              <div class="col-lg-12 d-flex justify-content-center">
+                <img src="img/false.png" alt="">
+              </div>
+              <div class="col-lg-12 text-center">
+                <p>Недостаточно средства</p>
+                <div class="btns text-center w100">
+                  <button class="btn repl-btn-v1">
+                    Назад
+                  </button>
+                  <br>
+                  <a href="#">Служба поддержки</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-true d-none align-items-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 message">
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <img src="img/true.png" alt="">
+            </div>
+            <div class="col-lg-12 text-center">
+              <p>Заявка на вывод создана</p>
+              <div class="btns text-center w100">
+                <button class="btn repl-btn-v1">
+                  Хорошо
+                </button>
+                <br>
+                <a href="#">Служба поддержки</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
