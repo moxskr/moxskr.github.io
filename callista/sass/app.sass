@@ -318,12 +318,18 @@ footer
 /* Main section index.html*/
 
 .main
-  background-image: url("../img/main_bg.png")
+  background-color: rgba(0,0,0,0.98)
   height: 100vh
   width: 100%
-  background-size: cover
-  background-repeat: no-repeat
+  z-index: 100
   overflow-y: hidden
+
+video
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
 
 .main--cont
   padding-top: 280px
@@ -798,14 +804,14 @@ button.btn.close-btn
   position: absolute
 
 #phone-img-main-bot
-  bottom: -85px
+  bottom: -90px
   margin-left: 60px
-  width: 460px
+  width: 420px
 
 #phone-img-main-top
-  top: -85px
+  top: -110px
   margin-left: -60px
-  width: 500px
+  width: 450px
 
 @media screen and (max-height: 940px)
   .main--cont
@@ -895,6 +901,10 @@ button.btn.close-btn
     span
       font-size: 10px
 
+@media screen and (min-width: 700px)
+  .history--list
+    height: 340px
+
 @media screen and (max-width: 980px)
   button.btn.close-btn
     top: 30px
@@ -974,14 +984,17 @@ button.btn.close-btn
       padding-top: 5px
 
   .history--list,.team--list
-    height: 300px
+    height: 340px
     .col-lg-12
-      padding-right: 5px
-      padding-left: 5px
+      padding-right: 0px
+      padding-left: 0px
+
+  .team--list
+    height: 450px
 
   .history--item
     height: 36px
-    font-size: 10px
+    font-size: 11px
     .col-4, .col-2, .col-3,.col-5
       padding-left: 0px
       padding-right: 0px
@@ -998,7 +1011,23 @@ button.btn.close-btn
     padding-right: 0px
     padding-left: 0px
 
+@media screen and (max-height: 650px)
+  .history--list
+    height: 250px
+  .team--list
+    height: 300px
 
+@media screen and (min-height: 800px)
+  .history--list
+    height: 400px
+  .team--list
+    height: 500px
+
+@media screen and (min-height: 900px)
+  .history--list
+    height: 700px
+  .team--list
+    height: 750px
 
 /* media-menu */
 
@@ -1067,7 +1096,7 @@ button.btn.close-btn
   .bal-cont
     padding: 5px 5px 5px 5px
   .bal-cont button
-    font-size: 15px
+    font-size: 18px
   .refferal-form h1
     padding: 5px 5px 5px 5px
     font-size: 16px
@@ -1077,7 +1106,7 @@ button.btn.close-btn
   .btn-container
     padding: 5px 5px 5px 5px
   .btn-copy
-    font-size: 12px
+    font-size: 18px
   .main-background
     width: 100%
   .code-form
@@ -1598,6 +1627,9 @@ button.btn.close-btn
   -webkit-animation-iteration-count: infinite
   -webkit-animation-timing-function: linear
   -webkit-animation-duration: 8s
+
+.duration-bot
+  animation-delay: 4s
 
 .logo-ellipse
   position: absolute
