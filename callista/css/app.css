@@ -23,8 +23,6 @@ button:focus {
 .main-background {
   background: linear-gradient(0.44deg, #000000 12.62%, rgba(0, 0, 0, 0) 68.07%), linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/background-profile.jpeg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   width: 100%; }
 
 /****************Navigation************\ */
@@ -562,13 +560,12 @@ button.btn.close-btn {
   border: 2px solid #111; }
   .special--item:hover {
     cursor: pointer;
-    border: 0.5px solid #eb5757;
     transition-duration: 0.4s; }
 
 .special--item-header {
   background-color: #EB5757;
   width: 100%;
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 12px 12px 0px 0px;
   color: white;
   font-size: 36px;
   padding-top: 40px;
@@ -872,7 +869,7 @@ button.btn.close-btn {
       padding-bottom: 5px;
       font-size: 15px; }
   .main--bottom-text {
-    padding-top: 100px; }
+    padding-top: 60px; }
     .main--bottom-text span {
       font-size: 10px; } }
 
@@ -1649,3 +1646,77 @@ button.btn.close-btn {
 @media screen and (max-width: 750px) {
   .main {
     overflow: hidden; } }
+
+@media (min-height: 700px) {
+  .main--cont {
+    padding-top: 250px; } }
+
+@media screen and (max-height: 700px) {
+  .main--cont {
+    padding-top: 150px; }
+  .main--bottom-text {
+    padding-top: 40px; }
+  #phone-img-main-bot {
+    width: 300px; }
+  #phone-img-main-top {
+    width: 300px; }
+  .member--typ-phone {
+    padding-top: 30px; }
+  .membership--item {
+    margin-top: 5px; }
+  .special {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .special--btn {
+    padding-top: 5px; }
+  .history--filters {
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .history--list {
+    height: 260px; }
+  .media-menu--header {
+    padding-top: 10px; }
+  .media-menu--nav {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .media-menu--nav ul li {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+  .team--list {
+    height: 360px; } }
+
+@media screen and (max-height: 500px) and (max-width: 960px) {
+  .main--img-container {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+  .main--cont {
+    padding-top: 120px; }
+  .main--bottom-text {
+    padding-top: 20px; }
+  #phone-img-main-bot {
+    width: 300px; }
+  #phone-img-main-top {
+    width: 300px; }
+  .cent-logo {
+    width: 60px;
+    height: 60px; }
+  .top-ell {
+    width: 210px;
+    height: 210px; }
+  .special--item-caption {
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    .special--item-caption p {
+      margin-bottom: 0px; }
+  .media-menu--header {
+    padding-top: 5px; }
+  .media-menu--nav {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .media-menu--nav ul li {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+  .history--list {
+    height: 180px; }
+  .team--list {
+    height: 260px; } }
