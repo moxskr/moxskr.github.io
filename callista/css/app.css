@@ -23,27 +23,30 @@ button:focus {
 .main-background {
   background: linear-gradient(0.44deg, #000000 12.62%, rgba(0, 0, 0, 0) 68.07%), linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/background-profile.jpeg);
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%; }
 
 /****************Navigation************\ */
 .nav {
   width: 100%;
-  padding-top: 100px; }
+  padding-top: 20px; }
 
 .vh100 {
+  height: 100vh; }
+
+.new-height {
   height: unset; }
 
 .nav a {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 24px;
   text-align: center;
   text-decoration: none;
   color: #999999;
   border-bottom: 1px solid #484848;
-  padding-bottom: 30px; }
+  padding-bottom: 20px; }
 
 .nav a:hover {
   color: #FFFFFF; }
@@ -63,7 +66,7 @@ a.active-nav {
 .balance p {
   padding: 27px 45px 7px 21px;
   margin: 0 auto;
-  font-size: 24px;
+  font-size: 18px;
   font-family: Roboto;
   font-weight: normal;
   line-height: 28px;
@@ -74,7 +77,7 @@ a.active-nav {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 42px;
   color: #FFFFFF; }
 
@@ -88,8 +91,7 @@ a.active-nav {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 18px;
   text-align: center;
   margin-top: 10.5px;
   margin-bottom: 10.5px; }
@@ -146,7 +148,7 @@ a.active-nav {
   color: #666666; }
 
 #name-contact {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 42px;
   color: #fff;
   padding: 34px 19px 7px 25px;
@@ -154,13 +156,13 @@ a.active-nav {
   margin: 0; }
 
 #Email-contact {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 24px;
   color: #fff;
   padding-right: 21px; }
 
 #Email-profile {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 28px;
   color: #999999;
   padding: 0 65px 0 25px; }
@@ -178,14 +180,15 @@ a.active-nav {
   margin: 0;
   display: inline-block;
   color: #fff;
-  padding: 0 0 0 25px; }
+  padding: 0 0 0 25px;
+  font-size: 32px; }
 
 .password-form {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 100px;
   padding-right: 100px;
-  font-size: 24px; }
+  font-size: 18px; }
   .password-form input {
     border: 1px solid #484848;
     background-color: #171717;
@@ -201,7 +204,7 @@ a.active-nav {
   .password-form input:focus {
     border: 1px solid #fff; }
   .password-form label {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
     color: #999999;
     padding: 24px 0 11px 25px;
@@ -217,7 +220,7 @@ a.active-nav {
 .refferal-form h1 {
   margin: 0;
   display: block;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 42px;
   color: #fff;
   padding: 26px 0 0 10px; }
@@ -225,7 +228,7 @@ a.active-nav {
 .refferal-form a {
   text-decoration: none;
   color: #999999;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 28px;
   display: inline-block;
   padding: 12px 0 0 10px; }
@@ -241,24 +244,23 @@ a.active-nav {
   width: 100%;
   height: 60px;
   border-radius: 106px;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 28px;
   color: #fff; }
 
 /**************** Unique Code ******\ */
 .code-form {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 15px;
   display: flex;
   justify-content: center; }
   .code-form p {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 18px;
     color: #999999;
     display: inline-block;
     margin: 0; }
   .code-form #unique-code {
-    font-size: 34px;
+    font-size: 28px;
     color: #fff;
     line-height: 42px;
     margin: 0; }
@@ -284,11 +286,11 @@ a.active-nav {
 
 .phone {
   color: #999999;
-  font-size: 24px; }
+  font-size: 18px; }
 
 .number {
   color: #FFFFFF;
-  font-size: 24px; }
+  font-size: 18px; }
 
 .btn-form {
   padding-top: 15px;
@@ -297,7 +299,7 @@ a.active-nav {
 .btn-save {
   width: 100%;
   height: 60px;
-  font-size: 24px;
+  font-size: 18px;
   border-radius: 106px;
   box-sizing: border-box;
   color: white;
@@ -305,11 +307,11 @@ a.active-nav {
 
 footer {
   width: 100%;
-  bottom: 0;
-  height: 140px;
+  height: 100px;
   background: #111111; }
   footer a {
-    font-size: 24px;
+    font-size: 16px;
+    line-height: 36px;
     color: #999;
     text-decoration: none; }
     footer a:hover {
@@ -375,7 +377,7 @@ video {
   padding-bottom: 10px;
   padding-right: 90px;
   padding-left: 90px;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: normal;
   font-style: normal; }
   .main-btn:hover {
@@ -423,7 +425,7 @@ video {
   .modal--header a {
     width: 100%;
     border-bottom: 2px solid #484848;
-    font-size: 36px;
+    font-size: 28px;
     color: white;
     text-decoration: none; }
     .modal--header a:hover {
@@ -434,7 +436,7 @@ video {
 .modal--form {
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 20px; }
+  font-size: 16px; }
   .modal--form input {
     border: 1px solid #484848;
     background-color: #111111;
@@ -444,7 +446,7 @@ video {
     margin-bottom: 10px;
     padding: 10px; }
   .modal--form label {
-    font-size: 18px;
+    font-size: 14px;
     color: #999;
     margin-left: 10px;
     margin-top: 10px; }
@@ -487,7 +489,7 @@ a.modal-active {
   box-sizing: border-box; }
 
 .modal--sign-in .btn.main-btn {
-  font-size: 18px;
+  font-size: 16px;
   width: 100%;
   text-align: center;
   padding-left: 0px;
@@ -498,7 +500,7 @@ a.modal-active {
   border: none; }
 
 .modal--soc-container {
-  font-size: 20px;
+  font-size: 16px;
   color: #999;
   padding-top: 30px;
   padding-bottom: 30px; }
@@ -526,18 +528,16 @@ button.btn.close-btn {
   line-height: 34px; }
 
 /* myrobot1.html */
-.h--container {
-  padding-top: 100px; }
-  .h--container h1 {
-    color: white;
-    font-size: 42px; }
+.h--container h1 {
+  color: white;
+  font-size: 32px; }
 
 .membership--item {
-  height: 80px;
+  height: 68px;
   background-color: #333;
   border-radius: 15px;
   margin-top: 15px;
-  font-size: 24px;
+  font-size: 18px;
   color: #999; }
   .membership--item .mem--item-name {
     color: white; }
@@ -550,8 +550,8 @@ button.btn.close-btn {
   margin-bottom: 15px;
   margin-top: 15px;
   background-color: #111;
-  padding-top: 70px;
-  padding-bottom: 35px;
+  padding-top: 50px;
+  padding-bottom: 25px;
   border-radius: 15px; }
 
 .special--item {
@@ -567,26 +567,26 @@ button.btn.close-btn {
   width: 100%;
   border-radius: 12px 12px 0px 0px;
   color: white;
-  font-size: 36px;
-  padding-top: 40px;
-  padding-bottom: 25px; }
+  font-size: 28px;
+  padding-top: 30px;
+  padding-bottom: 20px; }
 
 .special--item-caption {
   padding-top: 30px;
   padding-bottom: 30px; }
 
 .spec--item-date {
-  font-size: 24px;
+  font-size: 18px;
   color: white; }
 
 .spec--item-max-price {
   color: #999;
-  font-size: 24px; }
+  font-size: 18px; }
   .spec--item-max-price span {
     color: white; }
 
 .spec--item-price {
-  font-size: 36px;
+  font-size: 28px;
   color: #6FCF97; }
 
 .special--btn {
@@ -599,7 +599,7 @@ button.btn.close-btn {
     padding-right: 50px;
     background-color: #EB5757;
     color: white;
-    font-size: 24px;
+    font-size: 18px;
     border: 2px solid #EB5757; }
     .special--btn button:hover {
       color: white;
@@ -616,7 +616,7 @@ button.btn.close-btn {
   color: #999;
   background-color: #222;
   border-radius: 106px;
-  font-size: 24px;
+  font-size: 18px;
   border: 2px solid #222;
   outline: none; }
   .btn--filters:hover {
@@ -632,10 +632,10 @@ button.btn.close-btn {
 
 .history--item, .team--item {
   background-color: #222;
-  height: 80px;
+  height: 64px;
   border-radius: 15px;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 15px; }
 
 .his--price-true, .his--status-true {
@@ -649,7 +649,7 @@ button.btn.close-btn {
 
 .history--list, .team--list {
   margin-bottom: 15px;
-  height: 600px;
+  height: 460px;
   overflow-y: scroll;
   overflow-x: hidden;
   z-index: 99; }
@@ -691,7 +691,7 @@ button.btn.close-btn {
   height: 100%;
   background-color: transparent;
   color: #999;
-  font-size: 24px;
+  font-size: 18px;
   border: 2px solid #222; }
   .history--select option {
     background-color: #222; }
@@ -701,8 +701,8 @@ button.btn.close-btn {
   box-shadow: none; }
 
 .team--head {
-  padding-top: 30px;
-  font-size: 24px;
+  padding-top: 20px;
+  font-size: 16px;
   color: #999;
   padding-left: 35px;
   padding-right: 35px; }
@@ -710,9 +710,6 @@ button.btn.close-btn {
 .team--item {
   padding-left: 20px;
   padding-right: 20px; }
-
-.prof--cont {
-  padding-top: 75px; }
 
 .nav-bar--btn {
   position: fixed;
@@ -741,11 +738,7 @@ button.btn.close-btn {
   color: white; }
 
 .h--container {
-  padding-top: 70px; }
-
-@media screen and (max-height: 900px) {
-  .history--list, .team--list {
-    height: 500px; } }
+  padding-top: 20px; }
 
 @media screen and (max-width: 1366px) {
   .main--cont {
@@ -776,9 +769,7 @@ button.btn.close-btn {
   .support {
     right: 80px; }
   .h--container {
-    padding-top: 40px; }
-  .nav {
-    padding-top: 50px; }
+    padding-top: 20px; }
   .special {
     background-color: transparent;
     padding-top: 0px;
@@ -851,7 +842,10 @@ button.btn.close-btn {
   #modal-register .main-btn {
     font-size: 14px; }
   .support {
-    padding: 10px; }
+    padding: 5px; }
+    .support img {
+      width: 24px;
+      height: 20px; }
   .main--cont {
     padding-top: 250px; }
   .modal--checkbox input:checked + span::before {
@@ -875,7 +869,7 @@ button.btn.close-btn {
 
 @media screen and (min-width: 700px) {
   .history--list {
-    height: 340px; } }
+    height: 410px; } }
 
 @media screen and (max-width: 980px) {
   button.btn.close-btn {
@@ -885,7 +879,7 @@ button.btn.close-btn {
     width: 40px;
     font-size: 25px;
     line-height: 20px; }
-  .vh100 {
+  .new-height {
     height: 100vh; }
   .row {
     margin-right: 0px;
@@ -927,7 +921,7 @@ button.btn.close-btn {
     padding-bottom: 8px;
     font-size: 13px; }
   .support {
-    bottom: 30px;
+    bottom: 20px;
     right: 20px; }
   .btn--filters {
     font-size: 13px; }
@@ -969,17 +963,11 @@ button.btn.close-btn {
   .team--list {
     height: 300px; } }
 
-@media screen and (min-height: 800px) {
+@media (min-height: 860px) and (max-width: 960px) {
   .history--list {
     height: 400px; }
   .team--list {
-    height: 500px; } }
-
-@media screen and (min-height: 900px) {
-  .history--list {
-    height: 700px; }
-  .team--list {
-    height: 750px; } }
+    height: 450px; } }
 
 /* media-menu */
 .media-menu {
@@ -1017,6 +1005,9 @@ button.btn.close-btn {
     color: #999; }
   .media-menu--footer .media-menu--exit {
     color: #EB5757; }
+
+.prof--cont {
+  padding-top: 20px; }
 
 /**************Responsive Media**********\ */
 @media (max-width: 1200px) {
@@ -1720,3 +1711,30 @@ button.btn.close-btn {
     height: 180px; }
   .team--list {
     height: 260px; } }
+
+@media screen and (min-height: 1000px) {
+  .new-height {
+    height: 100vh; }
+  .footer {
+    position: absolute;
+    bottom: 0; } }
+
+.new-height {
+  height: unset; }
+
+.membership {
+  padding-top: 29px; }
+
+@media screen and (min-height: 900px) and (min-width: 960px) {
+  .team--list {
+    height: 624px; }
+  .history--list {
+    height: 500px; } }
+
+.footer-history {
+  position: absolute;
+  bottom: 0; }
+
+@media screen and (max-width: 960px) {
+  .new-height {
+    height: 100vh; } }
