@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /********************Переменные***************/
 /***************Глобальные**********\ */
+.new-height {
+  height: unset; }
+
 body {
   font-family: Roboto;
   font-style: normal;
@@ -747,6 +750,8 @@ button.btn.close-btn {
     padding-top: 100px; }
     .main--bottom-text span {
       font-size: 14px; }
+  .new-height {
+    height: 100vh; }
   .main--btn-container {
     padding-top: 50px; }
     .main--btn-container .main-btn {
@@ -1719,9 +1724,6 @@ button.btn.close-btn {
     position: absolute;
     bottom: 0; } }
 
-.new-height {
-  height: unset; }
-
 .membership {
   padding-top: 29px; }
 
@@ -1735,6 +1737,6 @@ button.btn.close-btn {
   position: absolute;
   bottom: 0; }
 
-@media screen and (max-width: 960px) {
+@media screen and (min-height: 1000px) {
   .new-height {
     height: 100vh; } }

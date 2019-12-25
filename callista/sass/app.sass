@@ -4,6 +4,9 @@ $text-color: #999999
 $border-color: #484848
 $red: #EB5757
 /***************Глобальные**********\
+.new-height
+  height: unset
+
 body
   font-family: Roboto
   font-style: normal
@@ -745,6 +748,9 @@ button.btn.close-btn
     padding-top: 100px
     span
       font-size: 14px
+
+  .new-height
+    height: 100vh
 
   .main--btn-container
     padding-top: 50px
@@ -1766,9 +1772,6 @@ button.btn.close-btn
     position: absolute
     bottom: 0
 
-.new-height
-  height: unset
-
 .membership
   padding-top: 29px
 
@@ -1782,6 +1785,6 @@ button.btn.close-btn
   position: absolute
   bottom: 0
 
-@media screen and (max-width: 960px)
+@media screen and (min-height: 1000px)
   .new-height
     height: 100vh
