@@ -17,7 +17,6 @@ $(document).ready(function () {
     };
 
     clickFuncModal($('.qualification img'));
-    clickFuncModal($('.works img'));
 
     $('.owl-carousel').owlCarousel({
         loop : true,
@@ -47,4 +46,30 @@ $(document).ready(function () {
     $('.close-media-btn').click(function () {
         $('.media-navbar').css({display : 'none'});
     })
+
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 300) {
+            $('.up-btn').css({display : 'block'});
+        } 
+        else{
+            $('.up-btn').css({display : 'none'})
+        }
+    });
+
+    $('.up-btn').click(function() {
+        window.scrollTo({
+            top : 0,
+            behavior : 'smooth'
+        });
+    });
+
+    $('.nav-btn-href').click(function() {
+        const pos = $(this.dataset.href + '').position();
+        window.scrollTo({
+            top : pos.top - 25,
+            behavior : 'smooth'
+        })
+        
+    });
+
 });

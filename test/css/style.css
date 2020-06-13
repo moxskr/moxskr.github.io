@@ -4,6 +4,9 @@
 
 .header {
   background-color: #333;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
   color: white; }
 
 .header--logo {
@@ -37,7 +40,7 @@
     right: 20px; }
 
 .main {
-  height: 75vh;
+  height: 80vh;
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -176,6 +179,11 @@ a.main-btn {
   width: 100%; }
   .work-item img {
     width: 100%; }
+  .work-item ul {
+    margin-left: -40px;
+    list-style: none;
+    color: white;
+    font-size: 16px; }
 
 .work-caption {
   background-color: #333;
@@ -210,7 +218,8 @@ a.main-btn {
   color: #333; }
 
 .contact {
-  height: 60vh;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #333;
   display: flex;
   justify-content: center;
@@ -286,6 +295,16 @@ footer {
   .close-media-btn:hover {
     color: #ffef00; }
 
+.up-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #ffef00;
+  display: none; }
+  .up-btn:hover {
+    background-color: #333333;
+    color: white; }
+
 @media screen and (max-width: 1182px) {
   .main--caption h2 {
     font-size: 32px; }
@@ -350,3 +369,6 @@ footer {
       font-size: 14px; }
   .carousel-navs .prev, .carousel-navs .next {
     display: none; } }
+
+.nav-btn-href {
+  cursor: pointer; }
