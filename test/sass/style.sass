@@ -48,6 +48,7 @@ $yellow : #ffef00
   background-repeat: no-repeat
   background-size: cover
   background-position: 10% 60%
+  padding-top: 64px
   .row
     height: 75vh
 
@@ -72,7 +73,7 @@ $yellow : #ffef00
   padding-top: 40px
   padding-bottom: 40px
 
-a.main-btn
+a.main-btn:not([href])
   background-color: $yellow
   color: #333
   border-radius: unset
@@ -312,8 +313,8 @@ footer
 @media screen and (max-width: 1620px)
   .carousel-navs
     .prev
-
-@media screen and (max-width: 1182px)
+  .main
+    height: 90vh
   .main--caption
     h2
       font-size: 32px
@@ -321,6 +322,16 @@ footer
       font-size: 24px
     ul
       font-size: 18px
+
+
+@media screen and (max-width: 1182px)
+  .main--caption
+    h2
+      font-size: 30px
+    p
+      font-size: 20px
+    ul
+      font-size: 16px
   a.main-btn
     font-size: 16px
   .main--caption iframe
